@@ -6,7 +6,7 @@
 import pymongo
 from bson import ObjectId
 
-client = pymongo.MongoClient("mongodb+srv://thearyandev:thearyandev@cluster0.3zdchzl.mongodb.net/", tlsAllowInvalidCertificates=True)
+client = pymongo.MongoClient("mongodb+srv://<your_username>@<your_password>@cluster0.3zdchzl.mongodb.net/", tlsAllowInvalidCertificates=True)
 # Not a good idea to include id and password in code files
 #  tlsAllowInvalidCertificates=True - Not a good way to handle ssl
 db = client["youtube_manager_db"] #Name of your database
